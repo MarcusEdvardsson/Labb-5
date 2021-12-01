@@ -392,6 +392,8 @@ input{
 /* DISCOVER SECTION */
 
 .discover{
+    margin-bottom: 6rem;
+
     &__card{
         position: relative;
         width: 200px;
@@ -468,6 +470,10 @@ input{
   
 ::-webkit-scrollbar-thumb:hover {
     background-color: $text-color-light;
+}
+
+.footer {
+    background: $first-color;
 }
 
 /* MEDIA QUERIES */

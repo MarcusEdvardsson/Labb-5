@@ -80,18 +80,16 @@ const sr = ScrollReveal({
     reset: true,
 })
 
-sr.reveal(`.home__data, .home__social-link, .home__info,
-           .discover__container,
-           .place__card,`,{
+sr.reveal(`.home__data, .home__social-link, .discover__container`, {
     origin: 'top',
-    interval: 100,
+    interval: 100
 })
 
 sr.reveal(`.about__data,`,{
     origin: 'left',
 })
 
-sr.reveal(`.about__img-overlay`,{
+sr.reveal(`.about__img-overlay, .home__info`,{
     origin: 'right',
     interval: 100,
 })

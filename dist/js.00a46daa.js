@@ -197,14 +197,14 @@ var sr = ScrollReveal({
   duration: 2800,
   reset: true
 });
-sr.reveal(".home__data, .home__social-link, .home__info,\n           .discover__container,\n           .place__card,", {
+sr.reveal(".home__data, .home__social-link, .discover__container", {
   origin: 'top',
   interval: 100
 });
 sr.reveal(".about__data,", {
   origin: 'left'
 });
-sr.reveal(".about__img-overlay", {
+sr.reveal(".about__img-overlay, .home__info", {
   origin: 'right',
   interval: 100
 });
@@ -236,7 +236,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51147" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51008" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
